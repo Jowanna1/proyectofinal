@@ -5,8 +5,7 @@
   
 }
 .App-logo{
-  padding: 5px;
-  width: min-content;
+  height: 30px;
   height: 100px;
   background-color: transparent ;
   display: inline-flex;
@@ -25,7 +24,16 @@
 .App-Link{
     display: flex;
 }
-/* 
+.App-user{
+  height: 30px;
+}
+.App-home{
+  height: 30px;
+}
+.Colombian{
+  color:#293039;
+}
+/*
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

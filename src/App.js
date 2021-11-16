@@ -7,6 +7,8 @@ import Login from './Vistas/Login';
 import Noticias from './Vistas/Noticias';
 import NotFound from './Vistas/NotFound';
 import logo from './assets/img/logo.png';
+import user from './assets/img/user.png';
+import home from './assets/img/home.png';
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
       <header className="App-header">
       <nav className="navbar navbar-expand-lg navbar-light" id="b">
         <div class="container-fluid">
-          <Link to='/'><img src={logo} className="App-logo"/>ColombianFood</Link>
+          <Link to='/' className="Colombian"><img src={logo} className="App-logo"/>ColombianFood</Link>
           
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span className="navbar-toggler-icon"></span>
@@ -23,10 +25,10 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="navbarNavAltMarkup">
-              <Link to='/Login'>Login🤡</Link>
+              <Link to='/Login'><img src={user} className="App-user"></img></Link>
               </li>
               <li className="nav-item">
-              <Link to='/Noticias'>Noticias</Link>
+              <Link to='/Noticias'><img src={home} className="App-home"></img></Link>
               </li>
         
             </ul>
