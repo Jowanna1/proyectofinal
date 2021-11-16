@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin: 10px;
+  margin: 5px;
   
   
 }
@@ -53,3 +53,29 @@
     transform: rotate(360deg);
   }
 } */
+
+/* Diseño Inicio */
+
+
+.inicio{
+  background: url('./assets/img/portada.jpg');
+  background-size: cover;
+  height: 85vh;
+  overflow: hidden;
+}
+.btn-receta{
+  align-items: center;
+  background-color: #ffbd59;
+  border-radius: 4%;
+  padding: 1.2rem;
+  font-weight: 700
+
+}
+.titulo{
+  margin-top: 285px;
+  color: #fff;
+}
+.c-receta{
+  align-items: center;
+  margin-top: 75px;
+}
