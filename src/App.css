@@ -1,67 +1,44 @@
 .App {
-  text-align: center;
-  margin: 5px;
-  
-  
+  margin: 5px; 
 }
 .App-logo{
-  height: 30px;
-  height: 100px;
+  height: 76px;
   background-color: transparent ;
   display: inline-flex;
   text-align: start;
 }
 
 .App-header{
-  background: #ffbd59;
-  margin-right: 5px;
-  text-indent: 5px;
-}
-.nav-item{
-  margin-right: 15px;
+  background: #ffbd59; 
 }
 
 .App-Link{
     display: flex;
 }
 .App-user{
-  height: 30px;
+  height: 25px;
+  margin: 7px;
 }
 .App-home{
-  height: 30px;
+  height: 25px;
+  margin: 7px;
 }
 .Colombian{
   color:#293039;
 }
-/*
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 /* Diseño Inicio */
-
+.btn-receta{
+  color: #515459;
+}
 
 .inicio{
   background: url('./assets/img/portada.jpg');
   background-size: cover;
   height: 85vh;
   overflow: hidden;
+  text-align: center;
+  
 }
 .btn-receta{
   align-items: center;
@@ -72,10 +49,60 @@
 
 }
 .titulo{
-  margin-top: 285px;
+  margin-top: 270px;
   color: #fff;
 }
 .c-receta{
   align-items: center;
-  margin-top: 75px;
+  margin-top: 70px;
+}
+.row{
+  background-color: #66a437;
+  text-align: center;
+  padding: 15px 0px;
+  margin-top: -50px;
+  margin:auto;
+}
+
+.fa-concierge-bell:before {
+    color: #293039;
+    font-size: 3rem;
+    text-decoration: solid;
+    text-decoration: double;
+}
+.fa-newspaper:before {
+    color: #293039;
+    font-size: 3rem;
+}
+.fa-users-cog:before {
+    color: #293039;
+    font-size: 3rem;
+}
+.menu{
+  margin-top: 9px;
+  height: 60px; 
+}
+.equipo{
+  margin-top: 9px;
+  height: 60px;
+}
+.periodico{
+  margin-top: 9px;
+  height: 60px;
+}
+.logueo{
+  background-color: #66a437;
+  background-size: cover;
+  height: 85vh;
+  overflow: hidden;
+  text-align: center;
+}
+.form-container{
+  text-align: center;
+  
+}
+.texto{
+  color: #515459;
+  font-size: large;
+  font-weight:600
 }

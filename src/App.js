@@ -30,12 +30,11 @@ function App() {
               <li className="nav-item">
               <Link to='/Noticias'><img src={home} className="App-home"></img></Link>
               </li>
-        
             </ul>
-          
         </div>
       </nav>
       </header>
+      
       <Routes>
           <Route path='/' element={<Inicio />}></Route>          
           <Route path='/Login' element ={<Login />}></Route>
