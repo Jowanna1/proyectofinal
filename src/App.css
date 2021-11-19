@@ -23,8 +23,14 @@
   height: 25px;
   margin: 7px;
 }
+
 .Colombian{
   color:#293039;
+}
+.navbar-light .navbar-brand {
+  color: #293039;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 /* Diseño Inicio */
@@ -105,4 +111,19 @@
   color: #515459;
   font-size: large;
   font-weight:600
+}
+
+/* FOOTER */
+.footer{
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 4px 0px;    
+  background-color: #ffbd59;
+}
+
+@media (min-width: 768px) { 
+  .footer{
+      font-size: 1rem;
+  }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import menu from '../assets/img/menu.png'
 import periodic from '../assets/img/periodic.png';
 import equipo from '../assets/img/equipo.png'
@@ -20,15 +20,15 @@ export default class Inicio extends Component {
             </div>
                 <div class="row">
                 <div class="col-md-4">
-                    <Link to="/servicios"><img src={menu} className="menu"/><i class="fas fa-concierge-bell"></i></Link>
+                    <Link to="/servicios"><img src={menu} alt="RECETAS" className="menu"/><i class="fas fa-concierge-bell"></i></Link>
                     <p class="texto">RECETAS</p>
                 </div>
                 <div class="col-md-4">
-                    <Link to="/noticias"><img src={periodic} className="periodico"/><i class="far fa-newspaper"></i></Link>
+                    <Link to="/noticias"><img src={periodic} alt="NOTICIAS" className="periodico"/><i class="far fa-newspaper"></i></Link>
                     <p class="texto">NOTICIAS GASTRONÓMICAS</p>
                 </div>
                 <div class="col-md-4">
-                    <Link to="/programadores"><img src={equipo} className="equipo"/><i class="fas fa-users-cog"></i></Link>
+                    <Link to="/programadores"><img src={equipo} alt="EQUIPO" className="equipo"/><i class="fas fa-users-cog"></i></Link>
                     <p class="texto">EQUIPO</p>
                 </div>
                 </div>

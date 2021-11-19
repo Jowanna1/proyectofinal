@@ -1,6 +1,7 @@
 import './App.css';
 import { Link, Routes, Route } from 'react-router-dom';
 import React from 'react';
+
 //import components
 import Inicio from './Vistas/Inicio';
 import Login from './Vistas/Login';
@@ -16,7 +17,7 @@ function App() {
       <header className="App-header">
       <nav className="navbar navbar-expand-lg navbar-light" id="b">
         <div class="container-fluid">
-          <Link to='/' className="Colombian"><img src={logo} className="App-logo"/>ColombianFood</Link>
+          <Link to='/' className="Colombian" class="navbar-brand"><img src={logo} alt="LOGO" className="App-logo"/>Colombian Food</Link>
           
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span className="navbar-toggler-icon"></span>
@@ -25,10 +26,10 @@ function App() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="navbarNavAltMarkup">
-              <Link to='/Login'><img src={user} className="App-user"></img></Link>
+              <Link to='/Login'><img src={user} alt="USER" className="App-user"></img></Link>
               </li>
               <li className="nav-item">
-              <Link to='/Noticias'><img src={home} className="App-home"></img></Link>
+              <Link to='/'><img src={home} alt="HOME" className="App-home"></img></Link>
               </li>
             </ul>
         </div>
@@ -43,11 +44,16 @@ function App() {
           </Route> */}
           <Route path='/Noticias' element ={<Noticias />}></Route>
           <Route path='/*' element ={<NotFound />}></Route>
-        </Routes>
+      </Routes>
+
+      <section class="footer">
+        <div class="container">
+          <p>2021 © TODOS LOS DERECHOS RESERVADOS A SMARTDEV</p>
+        </div>
+      </section>
+
     </div>
   );
 }
 
 export default App;
-
-
