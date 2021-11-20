@@ -5,7 +5,9 @@ import React from 'react';
 //import components
 import Inicio from './Vistas/Inicio';
 import Login from './Vistas/Login';
+import Servicios from './Vistas/Servicios';
 import Noticias from './Vistas/Noticias';
+import Programadores from './Vistas/Programadores';
 import NotFound from './Vistas/NotFound';
 import logo from './assets/img/logo.png';
 import user from './assets/img/user.png';
@@ -17,7 +19,7 @@ function App() {
       <header className="App-header">
       <nav className="navbar navbar-expand-lg navbar-light" id="b">
         <div class="container-fluid">
-          <Link to='/' className="Colombian" class="navbar-brand"><img src={logo} alt="LOGO" className="App-logo"/>Colombian Food</Link>
+          <Link to='/' className="Colombian" class="navbar-brand"><img src={logo} alt="LOGO" className="App-logo"/>COLOMBIAN FOOD</Link>
           
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
            <span className="navbar-toggler-icon"></span>
@@ -42,7 +44,11 @@ function App() {
             {/* <Route path='/Products/:productId'element={<SpecificProduct />}></Route>
             <Route path='/Products/Create' element ={<ProductCreate />}></Route>
           </Route> */}
-          <Route path='/Noticias' element ={<Noticias />}></Route>
+
+          <Route path='/servicios' element ={<Servicios />}></Route>
+          <Route path='/noticias' element ={<Noticias />}></Route>
+          <Route path='/programadores' element ={<Programadores />}></Route>
+          
           <Route path='/*' element ={<NotFound />}></Route>
       </Routes>
 

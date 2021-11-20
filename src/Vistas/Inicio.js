@@ -21,15 +21,15 @@ export default class Inicio extends Component {
                 <div class="row">
                 <div class="col-md-4">
                     <Link to="/servicios"><img src={menu} alt="RECETAS" className="menu"/><i class="fas fa-concierge-bell"></i></Link>
-                    <p class="texto">RECETAS</p>
+                    <p class="textoInicio">RECETAS</p>
                 </div>
                 <div class="col-md-4">
                     <Link to="/noticias"><img src={periodic} alt="NOTICIAS" className="periodico"/><i class="far fa-newspaper"></i></Link>
-                    <p class="texto">NOTICIAS GASTRONÓMICAS</p>
+                    <p class="textoInicio">NOTICIAS GASTRONÓMICAS</p>
                 </div>
                 <div class="col-md-4">
                     <Link to="/programadores"><img src={equipo} alt="EQUIPO" className="equipo"/><i class="fas fa-users-cog"></i></Link>
-                    <p class="texto">EQUIPO</p>
+                    <p class="textoInicio">EQUIPO</p>
                 </div>
                 </div>
                 </div>
@@ -37,3 +37,4 @@ export default class Inicio extends Component {
         )
     }
 }
+

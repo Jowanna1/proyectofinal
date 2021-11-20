@@ -1,6 +1,11 @@
-.App {
-  margin: 5px; 
+body{
+  background-color: #4c7031;
 }
+
+.App {
+  margin: 1px; 
+}
+
 .App-logo{
   height: 76px;
   background-color: transparent ;
@@ -63,7 +68,7 @@
   margin-top: 70px;
 }
 .row{
-  background-color: #66a437;
+  /*background-color: #66a437;*/
   text-align: center;
   padding: 15px 0px;
   margin-top: -50px;
@@ -107,13 +112,13 @@
   text-align: center;
   
 }
-.texto{
+.textoInicio{
   color: #515459;
   font-size: large;
   font-weight:600
 }
 
-/* FOOTER */
+/* DISEÑO FOOTER */
 .footer{
   text-align: center;
   font-size: 0.7rem;
@@ -127,3 +132,30 @@
       font-size: 1rem;
   }
 }
+
+/* DISEÑO SERVICIOS */
+.texto{
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.bienvenido{
+  background: url("./assets/img/fondo-movil2.jpg");
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) { 
+  .texto{
+      font-size: 1.6rem;
+  }
+  .bienvenido{
+      background: url("./assets/img/fondo2.jpg");
+      background-size: cover;
+      height: 100vh;
+      overflow: hidden;
+  }
+}
+
+/* DISEÑO PROGRAMADORES */
