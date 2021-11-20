@@ -14,7 +14,7 @@ export default class Inicio extends Component {
                 <h2>ANÍMATE Y COMPARTE TU RECETA</h2>
                 </div>
                 <div className="c-receta">
-                 <Link to='/' className="btn-receta">Comparte tu receta</Link>
+                 <Link to='/Regreceta' className="btn-receta">Comparte tu receta</Link>
                 <br />
                 </div>
             </div>

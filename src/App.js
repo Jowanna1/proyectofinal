@@ -5,13 +5,16 @@ import React from 'react';
 //import components
 import Inicio from './Vistas/Inicio';
 import Login from './Vistas/Login';
+import Registroreceta from './Vistas/Registroreceta';
 import Servicios from './Vistas/Servicios';
 import Noticias from './Vistas/Noticias';
 import Programadores from './Vistas/Programadores';
 import NotFound from './Vistas/NotFound';
+
 import logo from './assets/img/logo.png';
 import user from './assets/img/user.png';
 import home from './assets/img/home.png';
+
 
 function App() {
   return (
@@ -41,6 +44,7 @@ function App() {
       <Routes>
           <Route path='/' element={<Inicio />}></Route>          
           <Route path='/Login' element ={<Login />}></Route>
+          <Route path='/Regreceta' element ={<Registroreceta />}></Route>
             {/* <Route path='/Products/:productId'element={<SpecificProduct />}></Route>
             <Route path='/Products/Create' element ={<ProductCreate />}></Route>
           </Route> */}
@@ -48,7 +52,7 @@ function App() {
           <Route path='/servicios' element ={<Servicios />}></Route>
           <Route path='/noticias' element ={<Noticias />}></Route>
           <Route path='/programadores' element ={<Programadores />}></Route>
-          
+
           <Route path='/*' element ={<NotFound />}></Route>
       </Routes>
 
