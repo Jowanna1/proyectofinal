@@ -20,8 +20,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <nav className="navbar navbar-expand-lg navbar-light" id="b">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <div className="container-fluid">
           <Link to='/' className="Colombian" class="navbar-brand"><img src={logo} alt="LOGO" className="App-logo"/>COLOMBIAN FOOD</Link>
           
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@ function App() {
           </button>
           </div>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav mb-2 mb-lg-0">
               <li className="navbarNavAltMarkup">
               <Link to='/Login'><img src={user} alt="USER" className="App-user"></img></Link>
               </li>

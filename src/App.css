@@ -7,7 +7,7 @@ body{
 }
 
 .App-logo{
-  height: 76px;
+  height: 80px;
   background-color: transparent ;
   display: inline-flex;
   text-align: start;
@@ -22,15 +22,11 @@ body{
 }
 .App-user{
   height: 25px;
-  margin: 7px;
+  margin: 10px;
 }
 .App-home{
-  height: 25px;
-  margin: 7px;
-}
-
-.Colombian{
-  color:#293039;
+  height: 26px;
+  margin: 10px;
 }
 .navbar-light .navbar-brand {
   color: #293039;
@@ -39,9 +35,7 @@ body{
 }
 
 /* Diseño Inicio */
-.btn-receta{
-  color: #515459;
-}
+
 
 .inicio{
   background: url('./assets/img/portada.jpg');
@@ -56,8 +50,8 @@ body{
   background-color: #ffbd59;
   border-radius: 4%;
   padding: 1.2rem;
-  font-weight: 700
-
+  font-weight: 700;
+  color: #293039;
 }
 .titulo{
   margin-top: 270px;
