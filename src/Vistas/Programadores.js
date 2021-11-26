@@ -20,7 +20,7 @@ export default class Programadores extends Component {
                         </div>
                         <div class="col-md-6">
                             <img src={Alfonso} alt="Alfonso" width="140" height="140" class="img-thumbnail" />
-                            <p class="nombre">Alfonso Jaraba Casas</p>
+                            <p class="nombre">Excluido</p>
                             <p class="texto-1">Desarrollador FRONT-END, encargado de  la interfaz desde el punto de vista del código para que el usuario pueda interactuar con un sistema</p>
                         </div>
                         <div class="col-md-6">
