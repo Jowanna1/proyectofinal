@@ -32,10 +32,17 @@ usuarioCtrl.createUsuario= async (req,res)=>{
     }
 }
 
-/* usuarioCtrl.login= async (req,res)=>{
-    const {usuario,password}: req.body;
+usuarioCtrl.login= async (req,res)=>{
+    const {usuario,password}= req.body;
+    const user= await Usuario.findOne({usuario: usuario})
 
+    if(!user){
+        return res.json({
+            mensaje: 'Correo incorrecto y/o contraseña incorrrectos'
+        })
+    }
 
-} */
+    const match = await bcrypt.compare(password )
+}
 
 module.exports= usuarioCtrl
