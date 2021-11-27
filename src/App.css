@@ -1,5 +1,6 @@
 body{
-  background-color: #4c7031;
+  /* background-color: #4c7031; */
+  background-color: #66a437;
 }
 
 .App {
@@ -96,7 +97,7 @@ body{
   height: 60px;
 }
 .logueo{
-  background-color: #66a437;
+  /*background-color: #66a437; */
   background-size: cover;
   height: 85vh;
   overflow: hidden;
@@ -163,7 +164,10 @@ body{
 .boton{
   margin-top: 10px;
   background-color: #ffbd59;
-  text-align: center
+  text-align: center;
+  border-radius: 8%;
+  padding: 0.5rem;
+  font-weight: 700;
 }
 
 .input-config{
@@ -198,6 +202,9 @@ margin-top: 120px;
   .boton{
     margin-top: 10px;
     background-color: #ffbd59;
-    text-align: center
+    text-align: center;
+    border-radius: 8%;
+    padding: 0.5rem;
+    font-weight: 700;
   }
 }
