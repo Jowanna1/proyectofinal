@@ -4,10 +4,10 @@ const Schema= mongoose.Schema ;
 
 const db_recetas= new Schema({
     
-    receta: String,
-    ingredientes: String,
-    preparacion: String,
-    autor: String,
+    receta: {type: String, require:true},
+    ingredientes: {type: String, require:true},
+    preparacion: {type: String, require:true},
+    autor: {type: String, require:true},
     date:{type:Date, default:Date.now}
 });
 

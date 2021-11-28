@@ -12,7 +12,8 @@ app.use(cors({arigin:'*'}));
 
 //Rutas
 
-app.use('/usuario', require('./routes/usuarioRoute'))
+app.use('/usuario', require('./routes/usuarioRoute'));
+app.use('/recetas', require('./routes/recetaRouter'));
 
 //Puerto
 

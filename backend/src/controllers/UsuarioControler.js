@@ -38,11 +38,26 @@ usuarioCtrl.login= async (req,res)=>{
 
     if(!user){
         return res.json({
-            mensaje: 'Correo incorrecto y/o contraseña incorrrectos'
+            mensaje: 'Usuario y/o contraseña incorrrectos'
         })
     }
 
-    const match = await bcrypt.compare(password )
+    const match = await bcrypt.compare(password, user.password);
+
+    if(match){
+        const token = jwt.sign({_id:user._id}, 'Elusuari0')
+        res.json({
+            mensaje: 'Bienvenido',
+            id: user._id,
+            nombre: user.usuario,
+            token
+        })
+
+    }else{
+        res.json({
+            mensaje: 'Usuario y/o contraseña incorrrectos'
+        })
+    }
 }
 
-module.exports= usuarioCtrl
+module.exports= usuarioCtrl;

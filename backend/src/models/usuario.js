@@ -3,8 +3,8 @@ const Schema= mongoose.Schema ;
 
 
 const db_users= new Schema({
-    usuario: String,
-    password: String
+    usuario: {type: String, require:true},
+    password: {type: String, require:true}
 });
 
 //Convertir a modelo
