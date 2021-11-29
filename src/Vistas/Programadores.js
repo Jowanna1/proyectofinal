@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import Jenny from "../assets/img/Jenny.jpg"
-import Alfonso from "../assets/img/Alfonso.jpg"
+import Jesus from "../assets/img/jesus.jpg"
 import Sergio from "../assets/img/Sergio.jpg"
 import David from "../assets/img/David.jpg"
 import JuanCamilo from "../assets/img/juancamilo.jpg"  
@@ -19,8 +19,8 @@ export default class Programadores extends Component {
                             <p class="texto-1">Diseñadora gráfica, encargada de la maquetación del sitio WEB, distribución de colores, creación de logos y modificación de imagenes según el dispositivo a visualizar</p>
                         </div>
                         <div class="col-md-6">
-                            <img src={Alfonso} alt="Alfonso" width="140" height="140" class="img-thumbnail" />
-                            <p class="nombre">Excluido</p>
+                            <img src={David} alt="David" width="140" height="140" class="img-thumbnail" />
+                            <p class="nombre">David Gálvez Puerta</p>
                             <p class="texto-1">Desarrollador FRONT-END, encargado de  la interfaz desde el punto de vista del código para que el usuario pueda interactuar con un sistema</p>
                         </div>
                         <div class="col-md-6">
@@ -29,8 +29,8 @@ export default class Programadores extends Component {
                             <p class="texto-1">Desarrollador BACK-END, encargado de implementar la interacción entre el usuario y el sitio web</p>
                         </div>
                         <div class="col-md-6">
-                            <img src={David} alt="David" width="140" height="140" class="img-thumbnail" />
-                            <p class="nombre">David Gálvez Puerta</p>
+                            <img src={Jesus} alt="Jesus" width="140" height="140" class="img-thumbnail" />
+                            <p class="nombre">Jesus David Lozano</p>
                             <p class="texto-1">Desarrollador BACK-END,  encargado de implementar la interacción entre el usuario y el sitio web</p>
                         </div>
                         <div class="col-md-6">
