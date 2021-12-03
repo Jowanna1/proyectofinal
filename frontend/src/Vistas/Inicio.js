@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import menu from '../assets/img/menu.png'
+import menu from '../assets/img/menu.png';
 import periodic from '../assets/img/periodic.png';
-import equipo from '../assets/img/equipo.png'
+import equipo from '../assets/img/equipo.png';
 
 export default class Inicio extends Component {
     render() {

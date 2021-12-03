@@ -17,7 +17,8 @@ usuarioCtrl.createUsuario= async (req,res)=>{
 
     if(correoUsuario){
         res.json({
-            mensaje: 'ERROR el usuario ya existe'
+            mensaje: 'ERROR el usuario ya existe',
+            login: false
         })
     }else{
         NuevoUsuario.password= await bcrypt.hash(password,10)
@@ -25,9 +26,7 @@ usuarioCtrl.createUsuario= async (req,res)=>{
         await NuevoUsuario.save();
         res.json({
             mensaje: 'Bienvenido',
-            id: NuevoUsuario._id,
-            usuario: NuevoUsuario.usuario,
-            token
+            login: true
         })
     }
 }
@@ -38,7 +37,8 @@ usuarioCtrl.login= async (req,res)=>{
 
     if(!user){
         return res.json({
-            mensaje: 'Usuario y/o contraseña incorrrectos'
+            mensaje: 'Usuario y/o contraseña incorrrectos',
+            login: false
         })
     }
 
@@ -48,14 +48,13 @@ usuarioCtrl.login= async (req,res)=>{
         const token = jwt.sign({_id:user._id}, 'Elusuari0')
         res.json({
             mensaje: 'Bienvenido',
-            id: user._id,
-            nombre: user.usuario,
-            token
+            login: true
         })
 
     }else{
         res.json({
-            mensaje: 'Usuario y/o contraseña incorrrectos'
+            mensaje: 'Usuario y/o contraseña incorrrectos',
+            login: false
         })
     }
 }
