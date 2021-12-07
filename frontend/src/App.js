@@ -13,7 +13,7 @@ import Programadores from './Vistas/Programadores';
 import NotFound from './Vistas/NotFound';
 
 import logo from './assets/img/logo.png';
-import user from './assets/img/user.png';
+// import user from './assets/img/user.png';
 import home from './assets/img/home.png';
 
 export default class App extends React.Component{
@@ -55,9 +55,9 @@ export default class App extends React.Component{
             </div>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mb-2 mb-lg-0">
-                <li className="navbarNavAltMarkup">
+                {/* <li className="navbarNavAltMarkup">
                 <Link to='/Login'><img src={user} alt="USER" className="App-user"></img></Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                 <Link to='/'><img src={home} alt="HOME" className="App-home"></img></Link>
                 </li>
