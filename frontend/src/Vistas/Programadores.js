@@ -16,7 +16,7 @@ export default class Programadores extends Component {
                         <div class="col-md-6">
                             <img src={Jenny} alt="Jenny" width="140" height="140" class="img-thumbnail" />
                             <p class="nombre">Jenny Johanna Forero Ávila</p>
-                            <p class="texto-1">Diseñadora gráfica, encargada de la maquetación del sitio WEB, distribución de colores, creación de logos y modificación de imagenes según el dispositivo a visualizar</p>
+                            <p class="texto-1">Diseñadora, encargada de la maquetación del sitio WEB. Desarrolladora FRONT-END, encargada de la interfaz y experiencia de usuario en distintas vistas.</p>
                         </div>
                         <div class="col-md-6">
                             <img src={David} alt="David" width="140" height="140" class="img-thumbnail" />
